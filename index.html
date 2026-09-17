@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="darkreader-lock">
+  <meta name="theme-color" content="#101510">
+  <meta name="description" content="Explore scales, visualize chord progressions and bring your keyboard to life with DreamScaler. LED kit and standalone software for €169.">
+  <title>DreamScaler — See your next note.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="DreamScaler home">dream<span>scaler</span><small>STANDALONE</small></a>
+    <nav aria-label="Main navigation">
+      <a href="#app">The app</a>
+      <a href="#kit">Pre-order <span aria-hidden="true">↗</span></a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><span aria-hidden="true">◐</span></button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div><p class="eyebrow"><span class="status-dot"></span> A little light. A new way to play.</p><h1 id="hero-title">See your<br><em>next note.</em></h1></div>
+        <div class="hero-intro"><p>Find a scale. Follow a chord. <br>Let your keyboard light the way.</p><p class="muted">DreamScaler brings scales, harmony and colour to your keys with a standalone app and an LED strip.</p><a class="button primary" href="#app">Explore the app <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <figure class="action-photo"><img src="assets/dreamscaler-in-action.png" alt="A colourful DreamScaler LED strip illuminating the keys of an Arturia keyboard" width="2109" height="404" fetchpriority="high"><figcaption><span>Music, made visible.</span><span>YOUR KEYS. A NEW PERSPECTIVE.</span></figcaption></figure>
+    </section>
+
+    <section class="app-section wrap" id="app" aria-labelledby="app-title">
+      <div class="section-top"><div><p class="eyebrow">MEET YOUR MUSICAL WORKSPACE</p><h2 id="app-title">Less guessing.<br>More exploring.</h2></div><p class="muted">From a first idea to a new favourite progression.<br>Everything in one focused workspace.</p></div>
+      <div class="feature-tabs" role="tablist" aria-label="Explore app features">
+        <button type="button" role="tab" id="tab-scales" aria-controls="feature-panel" aria-selected="true" data-feature="scales"><span>01</span> Scales</button>
+        <button type="button" role="tab" id="tab-chords" aria-controls="feature-panel" aria-selected="false" tabindex="-1" data-feature="chords"><span>02</span> Chords</button>
+        <button type="button" role="tab" id="tab-playground" aria-controls="feature-panel" aria-selected="false" tabindex="-1" data-feature="playground"><span>03</span> Playground</button>
+        <button type="button" role="tab" id="tab-instrument" aria-controls="feature-panel" aria-selected="false" tabindex="-1" data-feature="instrument"><span>04</span> Instrument</button>
+        <button type="button" role="tab" id="tab-preferences" aria-controls="feature-panel" aria-selected="false" tabindex="-1" data-feature="preferences"><span>05</span> Preferences</button>
+      </div>
+      <div id="feature-panel" class="feature-panel" role="tabpanel" aria-labelledby="tab-scales" tabindex="0">
+        <div class="feature-copy"><span class="feature-number" id="feature-number">01 / 05</span><h3 id="feature-title">Find your next sound.</h3><p id="feature-description">Explore 44 scales. Pick a root note, filter by category and see every scale degree in colour—on screen and on your keys.</p><ul id="feature-points"><li>44 scales, every root note</li><li>Search and category filters</li><li>Live keyboard and LED preview</li></ul><p class="screenshot-caption">A look inside the standalone app <span aria-hidden="true">↗</span></p></div>
+        <div class="screen-frame"><img id="feature-image" src="assets/standalone-scales.png" alt="DreamScaler Scales view with scale selection and a coloured keyboard preview" width="1984" height="1375" loading="lazy"></div>
+      </div>
+      <div class="app-notes"><span><i aria-hidden="true">↔</i> USB connection</span><span><i aria-hidden="true">○</i> Try the preview without hardware</span><span><i aria-hidden="true">◐</i> Dark &amp; light themes</span><span><i aria-hidden="true">Aa</i> English · Czech · German</span></div>
+      <p class="platform-note">A Python desktop app, designed for Windows, macOS and Linux.</p>
+    </section>
+
+    <section class="story-section wrap" aria-labelledby="story-title">
+      <div><p class="eyebrow">A NOTE FROM THE CREATOR</p><h2 id="story-title">It started with<br>a scale I couldn’t remember.</h2></div>
+      <div class="story-copy"><p>As an adult studying music theory, I struggle to remember scales. But to me, scales are a gateway to the magic of human feelings and emotions.</p><p>That’s why I created DreamScaler: to make those patterns visible, so I can explore them and shape the mood of my own music.</p><span class="story-signature">Tomas Mark · Creator of DreamScaler</span></div>
+    </section>
+
+    <section class="kit-section wrap" id="kit" aria-labelledby="kit-title">
+      <p class="preorder-notice">Non-binding pre-orders are open. No payment or commitment to purchase is required. We will contact you when your kit is available.</p>
+      <div class="kit-card">
+        <div class="kit-copy"><p class="eyebrow">FROM SCREEN TO KEYS</p><h2 id="kit-title">Bring the light home.</h2><p class="muted">The DreamScaler LED kit and standalone software.</p><p class="kit-includes">RGBW LED strip · USB controller · Power supply · App</p></div>
+        <img class="kit-photo" src="assets/dreamscaler-kit.jpg" alt="DreamScaler LED kit with controller and accessories" loading="lazy" width="128" height="128">
+        <div class="kit-order"><p class="price">€169<span>Kit + App</span></p><a class="button primary" href="mailto:dreamscaler@digitalspace.name?subject=DreamScaler%20non-binding%20pre-order%20-%20Kit%20%2B%20standalone%20software%20%28without%20Bitwig%20extension%29&amp;body=Hello%2C%0A%0AI%20would%20like%20to%20register%20a%20non-binding%20pre-order%20for%3A%0AKit%20%2B%20standalone%20software%20%28without%20Bitwig%20extension%29%0APrice%3A%20EUR%20169%20%2B%20shipping%0AQuantity%3A%201%0A%0APlease%20fill%20in%20the%20details%20below%3A%0AFull%20name%3A%20%0AEmail%3A%20%0AKeyboard%20make%20and%20model%3A%20%0ADelivery%20country%3A%20%0AStreet%20and%20house%20number%3A%20%0ACity%3A%20%0APostcode%3A%20%0APhone%20for%20delivery%20%28if%20required%29%3A%20%0A%0AAdditional%20notes%3A%20%0A%0AThis%20is%20a%20non-binding%20expression%20of%20interest%2C%20with%20no%20obligation%20to%20purchase%20and%20no%20payment%20due%20now.%20Please%20contact%20me%20when%20the%20kit%20is%20available%20and%20confirm%20shipping%20costs%20before%20I%20decide%20whether%20to%20proceed.%0A%0AThank%20you.">Pre-order your kit <span aria-hidden="true">↗</span></a><small>Non-binding pre-order by email. No payment now. Shipping quoted separately.</small></div>
+      </div>
+      <div class="bitwig-card" aria-labelledby="bitwig-title">
+        <div><p class="eyebrow">OPTIONAL BITWIG STUDIO EXTENSION</p><h3 id="bitwig-title">See what your DAW is playing.</h3><p class="muted">Connect the LED strip to a MIDI channel on a track of your choice in Bitwig Studio. Get visual feedback as the actual MIDI notes playing in your DAW light up on the strip.</p><p class="kit-includes">RGBW LED strip · USB controller · Power supply · App + Bitwig Extension</p><p class="addon-note">Requires Bitwig Studio.</p><p class="addon-note">(A Max for Live version for Ableton Live is currently in development.)</p></div>
+        <div class="addon-order"><p class="price">€199<span>Kit + App + Bitwig Extension</span></p><a class="button primary" href="mailto:dreamscaler@digitalspace.name?subject=DreamScaler%20non-binding%20pre-order%20-%20Kit%20%2B%20standalone%20software%20%2B%20Bitwig%20extension&amp;body=Hello%2C%0A%0AI%20would%20like%20to%20register%20a%20non-binding%20pre-order%20for%3A%0AKit%20%2B%20standalone%20software%20%2B%20Bitwig%20extension%0APrice%3A%20EUR%20199%20%2B%20shipping%0AQuantity%3A%201%0A%0APlease%20fill%20in%20the%20details%20below%3A%0AFull%20name%3A%20%0AEmail%3A%20%0AKeyboard%20make%20and%20model%3A%20%0ADelivery%20country%3A%20%0AStreet%20and%20house%20number%3A%20%0ACity%3A%20%0APostcode%3A%20%0APhone%20for%20delivery%20%28if%20required%29%3A%20%0ABitwig%20Studio%20version%3A%20%0AOperating%20system%3A%20%0A%0AAdditional%20notes%3A%20%0A%0AThis%20is%20a%20non-binding%20expression%20of%20interest%2C%20with%20no%20obligation%20to%20purchase%20and%20no%20payment%20due%20now.%20Please%20contact%20me%20when%20the%20kit%20is%20available%20and%20confirm%20shipping%20costs%20before%20I%20decide%20whether%20to%20proceed.%0A%0AThank%20you.">Pre-order with Bitwig <span aria-hidden="true">&#8599;</span></a><p class="bundle-total">Non-binding pre-order by email. No payment now. Shipping quoted separately.</p></div>
+        <a class="bitwig-screenshot" href="assets/dreamscaler-bitwig-extension.png" target="_blank" rel="noopener" aria-label="View the DreamScaler Bitwig extension screenshot at full size (opens in a new tab)"><img src="assets/dreamscaler-bitwig-extension.png" alt="Bitwig Studio arrangement with the DreamScaler extension panel showing scale selection, LED intensity and track controls" width="3840" height="2088" loading="lazy"></a>
+      </div>
+      <p class="kit-footnote">Already have a keyboard? Keep playing it. DreamScaler adds a visual guide—your instrument makes the sound.</p>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#">dream<span>scaler</span></a><span>Made for musical curiosity.</span><a href="mailto:dreamscaler@digitalspace.name">Get in touch <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

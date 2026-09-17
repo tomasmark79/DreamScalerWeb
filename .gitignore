@@ -1,0 +1,7 @@
+# Original photography stays local; publish the selected copy in assets/.
+/IMG*.jpg
+/.preview/
+__pycache__/
+.DS_Store
+Thumbs.db
+*.log
