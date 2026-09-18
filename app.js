@@ -20,7 +20,8 @@ const features = {
   chords: { number: '03', title: 'Watch harmony unfold.', description: 'Visualize chord progressions one step at a time, or let them loop at your own pace. See how the notes move from chord to chord.', points: ['Six chord progressions', 'Adjustable tempo and looping', 'Step through chords manually'], image: 'standalone-chords.png', alt: 'DreamScaler Chords view with progression steps, tempo and keyboard preview' },
   playground: { number: '04', title: 'Make room for colour.', description: 'Give your keys a different mood. Explore moving light effects, slow things down or create your own colour.', points: ['Six effects, from Rainbow to Wave', 'Adjustable speed and brightness', 'Custom RGBW colour'], image: 'standalone-playgrounds.png', alt: 'DreamScaler Light playground with six colourful lighting effects' },
   instrument: { number: '05', title: 'Make it fit your keys.', description: 'Choose an instrument profile, align the strip and check each LED. Create your own layout with an editable note-to-LED profile.', points: ['Strip offset and direction', 'White, black and octave tests', 'Individual LED testing'], image: 'standalone-instrumenr.png', alt: 'DreamScaler Instrument view with profile selection, layout tests and strip alignment' },
-  preferences: { number: '06', title: 'Your space. Your way.', description: 'Keep your workspace comfortable. Choose a theme, switch language and pick the note spelling that feels natural to you.', points: ['Studio Dark and Studio Light', 'English, Czech and German', 'Sharp or flat note names'], image: 'standalone-preference.png', alt: 'DreamScaler Preferences view with theme, language and note spelling options' }
+  bitwig: { number: '06', title: 'See what your DAW is playing.', description: 'Watch the DreamScaler extension for Bitwig Studio turn MIDI notes into light on your keyboard.', points: ['MIDI notes visualized on the LED strip', 'Follow a track of your choice', 'Requires Bitwig Studio'], video: 'https://www.youtube-nocookie.com/embed/cD8VHF40KNY', videoTitle: 'DreamScaler Bitwig extension demo', caption: 'A look inside the Bitwig extension' },
+  preferences: { number: '07', title: 'Your space. Your way.', description: 'Keep your workspace comfortable. Choose a theme, switch language and pick the note spelling that feels natural to you.', points: ['Studio Dark and Studio Light', 'English, Czech and German', 'Sharp or flat note names'], image: 'standalone-preference.png', alt: 'DreamScaler Preferences view with theme, language and note spelling options' }
 };
 const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 function selectFeature(tab) {
@@ -31,12 +32,13 @@ function selectFeature(tab) {
   document.getElementById('feature-title').textContent = feature.title;
   document.getElementById('feature-description').textContent = feature.description;
   document.getElementById('feature-points').replaceChildren(...feature.points.map(point => { const li = document.createElement('li'); li.textContent = point; return li; }));
+  document.querySelector('.screenshot-caption').firstChild.textContent = `${feature.caption || 'A look inside the standalone app'} `;
   const media = document.getElementById('feature-media');
   if (feature.video) {
-    if (media.querySelector('iframe')) return;
+    if (media.querySelector('iframe')?.getAttribute('src') === feature.video) return;
     const video = document.createElement('iframe');
     video.src = feature.video;
-    video.title = 'DreamScaler standalone app demo';
+    video.title = feature.videoTitle || 'DreamScaler standalone app demo';
     video.width = '1280';
     video.height = '720';
     video.loading = 'lazy';
