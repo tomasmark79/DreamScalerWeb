@@ -35,6 +35,18 @@ The optional Bitwig extension connects the LED strip to a MIDI channel on a trac
 of your choice, giving you visual feedback from the actual notes playing in your DAW.
 It is available with the kit bundle and requires Bitwig Studio.
 
+New: change the root and scale in DreamScaler to control Bitwig 6's global key
+through Project Remote Controls. Assign Root Key to control 1 and Scale to
+control 2 on a project remote page named `DreamScaler`, then enable the desired
+sync options in the controller's Global Key settings. Root and scale sync are
+independent and run from DreamScaler to Bitwig. There are 21 mapped DreamScaler
+scales; unmapped scales leave Bitwig's global scale unchanged and show a notice.
+The LED strip continues to display the selected DreamScaler scale. Controls are
+available in English, Czech and German, with sharp or flat note names.
+
+[Global key setup](https://tomasmark79.github.io/DreamScalerWeb/#bitwig-global-key)
+
+
 (A Max for Live version for Ableton Live is currently in development.)
 
 ## Non-binding pre-orders
