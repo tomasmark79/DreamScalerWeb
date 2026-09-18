@@ -66,23 +66,16 @@
         <section class="bitwig-update" id="bitwig-global-key" aria-labelledby="bitwig-update-title">
           <p class="eyebrow">NEW IN THE BITWIG EXTENSION</p>
           <h3 id="bitwig-update-title">Set the key. Keep creating.</h3>
-          <p>Change the root note or scale in DreamScaler and update Bitwig Studio's global key through Project Remote Controls. Your LED strip follows your selection, while each sync option can be switched on or off independently.</p>
-          <ul>
-            <li>21 DreamScaler scales mapped to Bitwig's scale choices.</li>
-            <li>English, Czech and German controls, with a live choice of sharp or flat note names.</li>
-            <li>No matching scale? The strip still shows your selection; Bitwig's global scale stays unchanged and DreamScaler tells you why.</li>
-          </ul>
+          <p>Sync root and scale between DreamScaler and Bitwig 6. Choose either direction or both, and let your keyboard light up with your music.</p>
           <details class="bitwig-setup">
-            <summary>Set up global key control in Bitwig 6</summary>
+            <summary>Quick setup</summary>
             <ol>
-              <li>Create a Project Remote Controls page named <strong>DreamScaler</strong>.</li>
-              <li>Assign its first control to the global <strong>Root Key</strong> and its second to <strong>Scale</strong>. Use the full range of each parameter, without inversion.</li>
-              <li>In the DreamScaler controller settings, open <strong>Global Key</strong> and enable <strong>Send root to Bitwig</strong> and/or <strong>Send scale to Bitwig</strong>.</li>
-              <li>Choose a root and scale in DreamScaler, then save the project or a template to keep your assignments.</li>
+              <li>Create a Project Remotes page named <strong>DreamScaler</strong>.</li>
+              <li>Map control 1 to <strong>Root Key</strong> and control 2 to <strong>Scale</strong>, using their full ranges without inversion.</li>
+              <li>Under <strong>Global Key</strong> in DreamScaler, enable <strong>Send</strong>, <strong>Receive</strong>, or both for root and scale.</li>
             </ol>
-            <p>This connection runs from DreamScaler to Bitwig. Changing the global key in Bitwig does not change DreamScaler. Enabling a sync option sends the current selection; reopening a saved project alone does not overwrite the global key.</p>
+            <p>21 DreamScaler scales have a Bitwig match. Without a match, the receiving side keeps its current scale and a notice appears.</p>
           </details>
-          <p class="addon-note">Global key control requires Bitwig Studio 6. Root and scale synchronization confirmed working in Bitwig Studio 6.1.1.</p>
         </section>
         <a class="bitwig-screenshot" href="assets/dreamscaler-bitwig-extension.png?v=890c86498b5a" target="_blank" rel="noopener" aria-label="View the DreamScaler Bitwig extension screenshot at full size (opens in a new tab)"><img src="assets/dreamscaler-bitwig-extension.png?v=890c86498b5a" alt="DreamScaler extension in Bitwig Studio with root and scale synchronization controls, and the Project Remotes page showing Root Key and Scale" width="2128" height="1654" loading="lazy"></a>
       </div>
