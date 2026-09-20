@@ -63,29 +63,33 @@
       <p class="kit-footnote">Set up a profile to align the LEDs with your keys. DreamScaler provides the visual guide; your instrument makes the sound.</p>
     </section>
     <section class="diy-section wrap" id="diy" aria-labelledby="diy-title">
-      <p class="eyebrow">BUILD YOUR OWN DREAMSCALER</p>
-      <h2 id="diy-title">Your build. Our software.</h2>
-      <p class="diy-intro">Prefer to assemble the hardware yourself? Here is an overview of the components you will need.</p>
-      <div class="diy-table-wrap">
-        <table class="diy-table">
-          <caption>Components for a DIY build</caption>
-          <thead><tr><th scope="col">Component</th><th scope="col">Quantity</th><th scope="col">Details</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">SK6812 RGBW addressable LED strip</th><td>1</td><td>Choose the length and LED density to match your keyboard. The current firmware supports up to 144 LEDs.</td></tr>
-            <tr><th scope="row">Compatible USB controller board</th><td>1</td><td>Must support DreamScaler firmware, which uses the Arduino environment and an AVR LED driver. Exact board model to be confirmed.</td></tr>
-            <tr><th scope="row">External LED power supply</th><td>1</td><td>Voltage and current capacity must match the selected strip and LED count.</td></tr>
-            <tr><th scope="row">USB data cable</th><td>1</td><td>Connects the controller to your computer. Connector type depends on the board.</td></tr>
-            <tr><th scope="row">Wires and connectors</th><td>Set</td><td>For power, common ground and the LED data signal.</td></tr>
-            <tr><th scope="row">Power connector or terminal block</th><td>1</td><td>Must match the power supply connection.</td></tr>
-            <tr><th scope="row">Controller enclosure</th><td>1</td><td>Houses the board and secures the cables.</td></tr>
-            <tr><th scope="row">Mounting and insulation materials</th><td>Set</td><td>Double-sided tape, heat-shrink tubing and cable clips as needed.</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="diy-note">The final board model, LED density, power supply specifications and any protective components are still to be confirmed. This overview is not yet a final shopping list. Useful assembly tools include a soldering iron, solder and a multimeter.</p>
-      <div class="diy-software">
-        <div><h3>Software package for your own build</h3><p>DreamScaler firmware, the Standalone app and the Bitwig Extension. The software package will be registered to the individual user. Hardware is not included. The extension requires Bitwig Studio.</p></div>
-        <p class="diy-price">Price to be announced<span>Software package coming soon</span></p>
+      <div class="diy-heading"><p class="eyebrow">FOR THE MAKERS</p><h2 id="diy-title">Your build.<br>Our software.</h2><p>Assemble your own hardware and bring it to life with DreamScaler.</p></div>
+      <div class="diy-layout">
+        <aside class="diy-software" aria-labelledby="diy-software-title">
+          <span class="diy-badge">COMING SOON</span>
+          <h3 id="diy-software-title">The software.<br>All together.</h3>
+          <p>One package for your own DreamScaler build, registered to you.</p>
+          <ul><li>Standalone app</li><li>Bitwig Extension</li><li>Controller firmware</li></ul>
+          <div class="diy-price"><span>SOFTWARE PACKAGE</span><strong>Price to be announced</strong><p>Registered to the individual user.<br>Hardware not included.</p></div>
+          <p class="diy-compatibility">The extension requires Bitwig Studio.<br>The standalone app works on its own.</p>
+        </aside>
+        <div class="diy-hardware">
+          <table class="diy-table">
+            <caption>What you will need<span>Hardware for your DIY build</span></caption>
+            <thead><tr><th scope="col">Component</th><th scope="col">Qty.</th></tr></thead>
+            <tbody>
+                <tr><th scope="row"><span>SK6812 RGBW LED strip</span><small>Length and density to fit your keyboard. Up to 144 LEDs.</small></th><td>1</td></tr>
+                <tr><th scope="row"><span>USB controller board</span><small>Compatible with DreamScaler firmware. Model to be confirmed.</small></th><td>1</td></tr>
+                <tr><th scope="row"><span>LED power supply</span><small>Matched to your strip voltage and LED count.</small></th><td>1</td></tr>
+                <tr><th scope="row"><span>USB data cable</span><small>Connector to match your controller board.</small></th><td>1</td></tr>
+                <tr><th scope="row"><span>Wires &amp; connectors</span><small>Power, common ground and LED data connections.</small></th><td>Set</td></tr>
+                <tr><th scope="row"><span>Power connector</span><small>A matching socket or terminal block.</small></th><td>1</td></tr>
+                <tr><th scope="row"><span>Controller enclosure</span><small>A home for the board, with secure cable routing.</small></th><td>1</td></tr>
+                <tr><th scope="row"><span>Mounting &amp; insulation</span><small>Double-sided tape, heat-shrink tubing and cable clips.</small></th><td>Set</td></tr>
+            </tbody>
+          </table>
+          <details class="diy-details"><summary>Before you start</summary><p>The board model, LED density, power supply specifications and protective components are still to be confirmed. This is a component overview, not a final shopping list.</p><p>Useful tools: a soldering iron, solder and a multimeter. The firmware uses the Arduino environment and an AVR LED driver.</p></details>
+        </div>
       </div>
     </section>
   </main>
