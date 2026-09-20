@@ -1,5 +1,7 @@
 # DreamScaler
 
+<img src="assets/brand/DreamScaler128x128-trans-back.png" alt="DreamScaler logo" width="96" height="96">
+
 **See your next note.**
 
 Explore scales, visualize chord progressions and bring colour to your keyboard.
