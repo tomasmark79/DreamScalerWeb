@@ -15,12 +15,12 @@ themeButton.addEventListener('click', () => {
   try { localStorage.setItem('dreamscaler-web-theme', theme); } catch { /* The toggle also works without storage. */ }
 });
 const features = {
-  scales: { number: '01', title: 'Find your next sound.', description: 'Find your way around 44 scales directly on your keys. Use colours to distinguish scale degrees, or keep it simple with one colour.', points: ['Any root note, with search and filters', 'Mood descriptions for inspiration', 'Colour by degree or a single colour'], image: 'standalone-scales.png', alt: 'DreamScaler Scales view with scale selection and a coloured keyboard preview' },
-  chords: { number: '02', title: 'Watch harmony unfold.', description: 'Practise chord shapes and follow the notes from one chord to the next. Step through a progression or let it loop at your own pace.', points: ['Six chord progressions', 'Adjustable tempo and looping', 'Step through chords manually'], image: 'standalone-chords.png', alt: 'DreamScaler Chords view with progression steps, tempo and keyboard preview' },
-  playground: { number: '03', title: 'Make room for colour.', description: 'Give your keys a different mood. Explore moving light effects, slow things down or create your own colour.', points: ['Six effects, from Rainbow to Wave', 'Adjustable speed and brightness', 'Custom RGBW colour'], image: 'standalone-playgrounds.png', alt: 'DreamScaler Light playground with six colourful lighting effects' },
-  instrument: { number: '04', title: 'Make it fit your keys.', description: 'Every keyboard is different. Set up a profile to align each LED with its key, then check the fit with the built-in light tests.', points: ['Custom profiles for your keyboards', 'Strip offset and either direction', 'White, black and octave tests'], image: 'standalone-instrumenr.png', alt: 'DreamScaler Instrument view with profile selection, layout tests and strip alignment' },
+  scales: { number: '01', title: 'Find your next sound.', description: 'Find your way around 44 scales directly on your keys. Use colours to distinguish scale degrees, or keep it simple with one colour.', points: ['Any root note, with search and filters', 'Mood descriptions for inspiration', 'Colour by degree or a single colour'], image: 'standalone-scales-light.png', alt: 'DreamScaler Scales view with scale selection and a coloured keyboard preview' },
+  chords: { number: '02', title: 'Watch harmony unfold.', description: 'Practise chord shapes and follow the notes from one chord to the next. Step through a progression or let it loop at your own pace.', points: ['Six chord progressions', 'Adjustable tempo and looping', 'Step through chords manually'], image: 'standalone-chords-light.png', alt: 'DreamScaler Chords view with progression steps, tempo and keyboard preview' },
+  playground: { number: '03', title: 'Make room for colour.', description: 'Give your keys a different mood. Explore moving light effects, slow things down or create your own colour.', points: ['Six effects, from Rainbow to Wave', 'Adjustable speed and brightness', 'Custom RGBW colour'], image: 'standalone-playground-light.png', alt: 'DreamScaler Light playground with six colourful lighting effects' },
+  instrument: { number: '04', title: 'Make it fit your keys.', description: 'Every keyboard is different. Set up a profile to align each LED with its key, then check the fit with the built-in light tests.', points: ['Custom profiles for your keyboards', 'Strip offset and either direction', 'White, black and octave tests'], image: 'standalone-instrument-light.png', alt: 'DreamScaler Instrument view with profile selection, layout tests and strip alignment' },
   bitwig: { number: '06', title: 'See what your DAW is playing.', description: 'See playing notes on your LED strip and sync root and scale with Bitwig 6.', points: ['Two-way root and scale sync', 'Simple Project Remotes setup', '21 mapped scales'], image: 'dreamscaler-bitwig-extension.png', alt: 'DreamScaler Bitwig extension with root and scale synchronization controls', caption: 'A look inside the Bitwig extension' },
-  preferences: { number: '05', title: 'Your space. Your way.', description: 'Keep your workspace comfortable. Choose a theme, switch language and pick the note spelling that feels natural to you.', points: ['Studio Dark and Studio Light', 'English, Czech and German', 'Sharp or flat note names'], image: 'standalone-preference.png', alt: 'DreamScaler Preferences view with theme, language and note spelling options' }
+  preferences: { number: '05', title: 'Your space. Your way.', description: 'Keep your workspace comfortable. Choose a theme, switch language and pick the note spelling that feels natural to you.', points: ['Studio Dark and Studio Light', 'English, Czech and German', 'Sharp or flat note names'], image: 'standalone-preferences-light.png', alt: 'DreamScaler Preferences view with theme, language and note spelling options' }
 };
 const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 function selectFeature(tab) {
@@ -50,8 +50,8 @@ function selectFeature(tab) {
     image.id = 'feature-image';
     image.src = `assets/${feature.image}`;
     image.alt = feature.alt;
-    image.width = 1984;
-    image.height = 1375;
+    image.width = feature.image === 'dreamscaler-bitwig-extension.png' ? 2128 : 1902;
+    image.height = feature.image === 'dreamscaler-bitwig-extension.png' ? 1654 : 1341;
     image.loading = 'lazy';
     media.replaceChildren(image);
   }
