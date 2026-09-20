@@ -8,11 +8,10 @@ This is a static, single-page English website. No build process is required.
 - Feature descriptions and screenshot paths are in `app.js`. Keep the initial
   Scales panel in `index.html` in sync with its JavaScript entry.
 - Product photos and original app screenshots live in `assets/`.
-- The creator's story and optional Bitwig Studio extension are in `index.html`.
-  The kit + standalone software costs €169; the bundle including Bitwig costs
-  €199. Both order links prefill email drafts. The extension is not sold separately.
-- The kit costs €169 including software. The existing email contact handles
-  orders; shipping is quoted separately. No payment integration is configured.
+- The creator's story and single complete package are in `index.html`.
+  The package costs EUR 199 and includes the LED kit, standalone app and Bitwig
+  extension. One order link prefills an email draft. Shipping is quoted separately.
+  No payment integration is configured.
 
 ## Appearance
 
@@ -34,5 +33,5 @@ python -m http.server 8767 --bind 127.0.0.1
 Then visit `http://127.0.0.1:8767`. The repository root is also ready for GitHub
 Pages with `.nojekyll`. Publishing is a separate step from local editing.
 
-Both bundles are offered as non-binding pre-orders. Email drafts state that no
-payment or commitment to purchase is required. Prices remain EUR 169 and EUR 199.
+The complete package is offered as a non-binding pre-order for EUR 199. The email
+draft states that no payment or commitment to purchase is required.

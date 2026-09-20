@@ -33,21 +33,9 @@ DreamScaler to make those patterns visible and help shape the mood of my own mus
 
 ## Bring it into Bitwig Studio
 
-The optional Bitwig extension connects the LED strip to a MIDI channel on a track
+The included Bitwig extension connects the LED strip to a MIDI channel on a track
 of your choice, giving you visual feedback from the actual notes playing in your DAW.
-It is available with the kit bundle and requires Bitwig Studio.
-
-New: change the root and scale in DreamScaler to control Bitwig 6's global key
-through Project Remote Controls. Assign Root Key to control 1 and Scale to
-control 2 on a project remote page named `DreamScaler`, then enable the desired
-sync options in the controller's Global Key settings. Root and scale sync are
-independent and run from DreamScaler to Bitwig. There are 21 mapped DreamScaler
-scales; unmapped scales leave Bitwig's global scale unchanged and show a notice.
-The LED strip continues to display the selected DreamScaler scale. Controls are
-available in English, Czech and German, with sharp or flat note names.
-
-[Global key setup](https://tomasmark79.github.io/DreamScalerWeb/#bitwig-global-key)
-
+It is part of the complete package and requires Bitwig Studio. The standalone app works on its own.
 
 (A Max for Live version for Ableton Live is currently in development.)
 
@@ -55,13 +43,12 @@ available in English, Czech and German, with sharp or flat note names.
 
 | Bundle | Price |
 | --- | ---: |
-| LED kit + standalone software | €169 |
-| LED kit + standalone software + Bitwig extension | €199 |
+| Complete LED kit + standalone app + Bitwig extension | €199 |
 
 The kit includes an RGBW LED strip, USB controller and power supply.
 Shipping is quoted separately. Pre-orders require **no payment and no commitment
 to purchase**. We will contact you when your kit is available.
 
-[Choose your bundle and pre-order](https://tomasmark79.github.io/DreamScalerWeb/#kit)
+[Pre-order the complete package](https://tomasmark79.github.io/DreamScalerWeb/#kit)
 
 Questions? [Get in touch](mailto:dreamscaler@digitalspace.name).
