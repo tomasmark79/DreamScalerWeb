@@ -109,4 +109,5 @@
 .software-stack .stack-bitwig{top:49%}
 
 .diy-components-drawing{position:relative;isolation:isolate}
-.diy-components-drawing::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--text);opacity:.12;-webkit-mask:url("assets/dreamscaler-wiring.svg") center / contain no-repeat;mask:url("assets/dreamscaler-wiring.svg") center / contain no-repeat}
+.diy-components-drawing::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:var(--text);opacity:.20;-webkit-mask:url("assets/dreamscaler-wiring.svg") center / contain no-repeat;mask:url("assets/dreamscaler-wiring.svg") center / contain no-repeat}
+.diy-components-drawing>.diy-table{position:relative;z-index:1}
