@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
 <title id="title">DreamScaler wiring</title>
 <desc id="desc">USB powers Nano. D6 connects to LED DIN. Separate 5V supply powers the strip. All grounds are connected. A polarized 1000 microfarad 10 volt capacitor is connected across strip power.</desc>
-<style>text{font:18px Arial,sans-serif;fill:#202b32}.small{font-size:15px}.wire{fill:none;stroke:#202b32;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.box{fill:white;stroke:#202b32;stroke-width:2.5}.dot{fill:#202b32}</style>
-<rect width="1000" height="640" fill="white"/>
+<style>text{font:18px Arial,sans-serif;fill:#202b32}.small{font-size:15px}.wire{fill:none;stroke:#202b32;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.box{fill:none;stroke:#202b32;stroke-width:2.5}.dot{fill:#202b32}</style>
 <!-- USB-powered controller -->
 <path class="wire" d="M240 45V120"/><rect class="box" x="228" y="55" width="24" height="35" rx="4"/><text x="266" y="79">USB-C</text>
 <rect class="box" x="130" y="120" width="220" height="160" rx="8"/><text x="240" y="167" text-anchor="middle">NANO</text><text x="328" y="208" text-anchor="end">D6</text><text x="149" y="253">GND</text>
