@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+<title id="title">DreamScaler wiring</title>
+<desc id="desc">USB powers Nano. D6 connects to LED DIN. Separate 5V supply powers the strip. All grounds are connected. A polarized 1000 microfarad 10 volt capacitor is connected across strip power.</desc>
+<style>text{font:18px Arial,sans-serif;fill:#202b32}.small{font-size:15px}.wire{fill:none;stroke:#202b32;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.box{fill:white;stroke:#202b32;stroke-width:2.5}.dot{fill:#202b32}</style>
+<rect width="1000" height="640" fill="white"/>
+<!-- USB-powered controller -->
+<path class="wire" d="M240 45V120"/><rect class="box" x="228" y="55" width="24" height="35" rx="4"/><text x="266" y="79">USB-C</text>
+<rect class="box" x="130" y="120" width="220" height="160" rx="8"/><text x="240" y="167" text-anchor="middle">NANO</text><text x="328" y="208" text-anchor="end">D6</text><text x="149" y="253">GND</text>
+<!-- Strip -->
+<rect class="box" x="760" y="150" width="180" height="360" rx="6"/><text x="850" y="182" text-anchor="middle">SK6812</text><text x="778" y="208">DIN</text><text x="778" y="408">+5V</text><text x="778" y="478">GND</text>
+<g class="box"><rect x="790" y="255" width="32" height="32"/><rect x="834" y="255" width="32" height="32"/><rect x="878" y="255" width="32" height="32"/></g><path class="wire" d="M798 322H904M893 314L905 322L893 330"/>
+<!-- Supply -->
+<rect class="box" x="130" y="360" width="220" height="150" rx="8"/><text x="240" y="394" text-anchor="middle">5V DC</text><text x="240" y="419" class="small" text-anchor="middle">10A</text><text x="328" y="460" text-anchor="end">+</text><text x="150" y="480">-</text>
+<!-- Nets -->
+<path class="wire" d="M350 200H760M350 455H460V400H760M130 245H65V570H710V470H760M130 475H65"/>
+<circle class="dot" cx="65" cy="475" r="4"/>
+<!-- Polarized capacitor -->
+<path class="wire" d="M595 400V464M577 464H613M577 480H613M595 480V570"/><circle class="dot" cx="595" cy="400" r="4"/><circle class="dot" cx="595" cy="570" r="4"/><text x="564" y="454">+</text><text x="620" y="467" class="small">1000 &#181;F</text><text x="620" y="490" class="small">10V</text>
+<!-- Common ground -->
+<path class="wire" d="M400 570V594M383 594H417M389 602H411M395 610H405"/><circle class="dot" cx="400" cy="570" r="4"/>
+</svg>

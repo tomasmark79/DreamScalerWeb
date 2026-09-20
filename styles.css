@@ -107,3 +107,8 @@
 .software-stack{aspect-ratio:128 / 140}
 .software-stack .stack-chords{top:25%}
 .software-stack .stack-bitwig{top:49%}
+
+.diy-wiring{margin-top:28px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+.diy-wiring a{display:block;background:#fff;cursor:zoom-in}
+.diy-wiring img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain}
+.diy-wiring figcaption{display:flex;justify-content:space-between;gap:16px;padding:12px 16px;font-size:var(--note-size);color:var(--muted)}
